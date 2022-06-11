@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+        <TargetFramework>net6.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>DamienVdk.DialogFlowNetTools.FulfillmentIntent</Title>
+        <Authors>Damien Vande Kerckhove</Authors>
+        <Description>This package allows you to easy create a webhook for fulfilllmen intent from DialogFlow Essentials.</Description>
+        <Copyright>DamienVdk.com</Copyright>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Google.Cloud.Dialogflow.V2" Version="4.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Routing" Version="2.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    
+
+</Project>
