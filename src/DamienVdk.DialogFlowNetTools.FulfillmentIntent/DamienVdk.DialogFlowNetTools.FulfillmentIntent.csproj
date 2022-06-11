@@ -10,7 +10,6 @@
         <Authors>Damien Vande Kerckhove</Authors>
         <Description>This package allows you to easy create a webhook for fulfilllmen intent from DialogFlow Essentials.</Description>
         <Copyright>DamienVdk.com</Copyright>
-        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageId>NuGet.Workflow</PackageId>
         <RepositoryType>git</RepositoryType>
         <RepositoryUrl>https://github.com/acraven/blog-nuget-workflow-github-actions</RepositoryUrl>
