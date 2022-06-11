@@ -20,6 +20,6 @@ jobs:
     - name: Pack
       run: dotnet pack src/DamienVdk.DialogFlowNetTools.FulfillmentIntent/DamienVdk.DialogFlowNetTools.FulfillmentIntent.csproj --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Push
-      run: dotnet nuget push DamienVdk.DialogFlowNetTools.FulfillmentIntent.${VERSION}.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN}
+      run: dotnet nuget push /home/runner/work/DamienVdk.DialogFlowNetTools/DamienVdk.DialogFlowNetTools.FulfillmentIntent.${VERSION}.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
