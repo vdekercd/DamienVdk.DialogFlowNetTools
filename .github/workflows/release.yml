@@ -16,16 +16,10 @@ jobs:
     - name: Set VERSION variable from tag
       run: echo "VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_ENV
     - name: Build
-      run: dotnet build --configuration Release /p:Version=${VERSION}
-      working-directory: src
-    - name: Test
-      run: dotnet test --configuration Release /p:Version=${VERSION} --no-build
-      working-directory: src
+      run: dotnet build src/DamienVdk.DialogFlowNetTools.FulfillmentIntent/DamienVdk.DialogFlowNetTools.FulfillmentIntent.csproj --configuration Release /p:Version=${VERSION}
     - name: Pack
-      run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
-      working-directory: src
+      run: dotnet pack src/DamienVdk.DialogFlowNetTools.FulfillmentIntent/DamienVdk.DialogFlowNetTools.FulfillmentIntent.csproj --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Push
       run: dotnet nuget push NuGet.Workflow.${VERSION}.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN}
-      working-directory: src
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
