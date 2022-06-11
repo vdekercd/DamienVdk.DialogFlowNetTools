@@ -1,0 +1,12 @@
+global using DamienVdk.DialogFlowNetTools.FulfillmentIntent.Attributes;
+global using DamienVdk.DialogFlowNetTools.FulfillmentIntent.Contracts;
+global using DamienVdk.DialogFlowNetTools.FulfillmentIntent.Strategies;
+global using Google.Cloud.Dialogflow.V2;
+global using Google.Protobuf;
+global using Microsoft.AspNetCore.Builder;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Routing;
+global using Microsoft.AspNetCore.Server.Kestrel.Core;
+global using Microsoft.Extensions.DependencyInjection;
+global using System.Text.RegularExpressions;
