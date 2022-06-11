@@ -13,5 +13,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Build
-      run: dotnet build --configuration Release
-      working-directory: src
+      run: dotnet build >dotnet build src/DamienVdk.DialogFlowNetTools.FulfillmentIntent/DamienVdk.DialogFlowNetTools.FulfillmentIntent.csproj --configuration Release
