@@ -12,7 +12,10 @@
         <Copyright>DamienVdk.com</Copyright>
         <PackageId>DamienVdk.DialogFlowNetTools.FulfillmentIntent</PackageId>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/acraven/blog-nuget-workflow-github-actions</RepositoryUrl>
+        <RepositoryUrl>https://github.com/vdekercd/DamienVdk.DialogFlowNetTools</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/vdekercd/DamienVdk.DialogFlowNetTools</PackageProjectUrl>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>

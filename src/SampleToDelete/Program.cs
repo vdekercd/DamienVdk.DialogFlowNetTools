@@ -20,7 +20,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-app.MapFulfillmentIntent("dialogFlow");
+app.UseDialogFlowFulfillment("dialogFlow");
 
 app.UseAuthorization();
 

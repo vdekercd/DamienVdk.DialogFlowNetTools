@@ -4,7 +4,7 @@ public static class IApplicationBuilderExtensions
 {
     private static JsonParser _jsonParser = new JsonParser(JsonParser.Settings.Default.WithIgnoreUnknownFields(true));
     
-    public static IEndpointRouteBuilder  MapFulfillmentIntent(this IEndpointRouteBuilder  @this, string endpoint)
+    public static IEndpointRouteBuilder UseDialogFlowFulfillment(this IEndpointRouteBuilder  @this, string endpoint)
     {
         @this.MapPost(endpoint,async (HttpRequest httpRequest, IDetectIntentAndGetResponseStrategy detectIntentAndGetResponseStrategy) =>
         {

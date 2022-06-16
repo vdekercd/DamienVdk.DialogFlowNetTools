@@ -29,6 +29,6 @@ public class DefaultDetectIntentAndGetResponseStrategy: IDetectIntentAndGetRespo
             }
         }
 
-        return null!;
+        return new WebhookResponse() { FulfillmentText =""};
     }
 }
