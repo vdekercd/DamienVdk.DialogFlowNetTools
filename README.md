@@ -32,7 +32,7 @@ app.UseDialogFlowFulfillment("/DialogFlow");
 
 ### Usage
 
-When you create an intent in DialogFlow, you can to respond to it via a fulfillment (webhook). In order to respect the Single Responsabilty Principle (SRP), the goal is to create a class by intent. 
+When you create an intent in DialogFlow, you can respond to it via a fulfillment (webhook). In order to respect the Single Responsabilty Principle (SRP), the goal is to create a class by intent. 
 
 In order not to have to write a long code composed of several if/else to detect which class called according to the intent, the package can automatically find the class to call and formulate the answer based on the name of the intent.
 
