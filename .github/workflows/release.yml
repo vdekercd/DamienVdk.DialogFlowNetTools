@@ -22,4 +22,4 @@ jobs:
     - name: Push
       run: dotnet nuget push DamienVdk.DialogFlowNetTools.FulfillmentIntent.${VERSION}.nupkg --source  https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN}
       env:
-        NUGET_TOKEN: ${{ secrets.NUGET_API_KEY }}
+        NUGET_TOKEN: ${{ secrets.NUGET_KEY_API }}
