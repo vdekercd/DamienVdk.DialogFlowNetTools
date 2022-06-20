@@ -1,0 +1,9 @@
+global using DamienVdk.DialogFlowNetTools.Integration.Contracts;
+global using DamienVdk.DialogFlowNetTools.Integration.Exceptions;
+global using DamienVdk.DialogFlowNetTools.Integration.Options;
+global using DamienVdk.DialogFlowNetTools.Integration.Services;
+global using Google.Apis.Auth.OAuth2;
+global using Google.Apis.Dialogflow.v2;
+global using Google.Apis.Dialogflow.v2.Data;
+global using Google.Apis.Services;
+global using Microsoft.Extensions.DependencyInjection;
