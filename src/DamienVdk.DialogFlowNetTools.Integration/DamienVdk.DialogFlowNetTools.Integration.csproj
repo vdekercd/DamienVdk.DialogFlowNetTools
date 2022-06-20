@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
+        <Title>DamienVdk DialogFlowNetTools Integration</Title>
+        <Description>This package allows you to easily integrate your DialogFlow agent into your .Net application.</Description>
+        <Copyright>DamienVDK.com</Copyright>
+        <PackageProjectUrl>https://github.com/vdekercd/DamienVdk.DialogFlowNetTools</PackageProjectUrl>
+        <PackageLicenseUrl></PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/vdekercd/DamienVdk.DialogFlowNetTools</RepositoryUrl>
+        <RepositoryType>github</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Apis.Dialogflow.v2" Version="1.57.0.2700" />
+        <PackageReference Include="Google.Cloud.Dialogflow.V2" Version="4.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>
