@@ -148,7 +148,7 @@ A conversation has a session name that remains the same throughout that conversa
 var session = Guid.NewGuid().ToString();
 // Some super code
 var text = Console.ReadLine();
-var response =  await dialogFlowIntentDetecter.DetectIntentAsync(session, text/*, you can override language here*/);
+var response =  await dialogFlowIntentDetecter.DetectIntentAsync(session, text/*, you can override default language here*/);
 Console.WriteLine($"Intent : {response?.Intent?.DisplayName}");
 Console.WriteLine($"Message : {response?.FulfillmentText}");
 ```
