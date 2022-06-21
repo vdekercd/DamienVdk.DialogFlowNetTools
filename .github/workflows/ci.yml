@@ -42,5 +42,8 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"vdekercd_DamienVdk.DialogFlowNetTools" /o:"vdekercd" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          <insert_your_clean_build_command>
+          dotnet clean ./src/DamienVdk.DialogFlowNetTools.sln
+          dotnet restore ./src/DamienVdk.DialogFlowNetTools.sln
+          dotnet build ./src/DamienVdk.DialogFlowNetTools.sln
+          dotnet test ./src/DamienVdk.DialogFlowNetTools.sln 
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
